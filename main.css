@@ -1,0 +1,217 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+
+header{
+    background-color: #f6f6f6;
+    padding: 22px 0px;
+}
+
+.header-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container a{
+    color: black;
+    font-size: 16px;
+    padding: 27px 6px;
+    margin-right: 63px;
+    transition: 1s;
+}
+
+.header-container a:hover{
+    background-color: #ffea00;
+}
+
+nav{
+    margin-top: 20px;
+}
+#menu-checkbox{
+    display: none;
+}
+ul{
+    display: flex;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+.top-container{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.top-slide{
+    background: url(/img/slider_bg.png) no-repeat;
+    padding-bottom: 300px;
+}
+.top-slide h2{
+    display: inline;
+    background-color: #ffea00;
+    font-size: 70px;
+    padding: 0 13px;
+}
+
+.top-slide :nth-child(2){
+    margin-bottom: 15px;
+}
+
+.top-slide p{
+    font-size: 24px;
+    display: inline;
+    background-color: #414146;
+    color: white;
+    padding: 0 4px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+
+.specialize-container{
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 90px;
+}
+.specialize-container h3{
+    font-size: 35px;
+    color: #424147;
+}
+
+.specialize-container-p{
+    margin-top: 28px;
+
+    font-size: 24px;
+    color: #424147;
+    margin-bottom: 62px;
+}
+
+.specialize-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.first{
+    font-size: 20px;
+    color: white;
+}
+
+.bottom-card{
+    position: relative;
+    padding: 25px;
+    top: -80px;
+    background-color: #414146;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+.portfolio{
+    text-align: center;
+}
+
+.portfolio h4{
+    color: #ffea00;
+    width: 120px;
+    font-size: 20px;
+    padding: 9px 29px;
+    background-color: #424147;
+    margin: 0 auto;
+}
+
+.portfolio p{
+    color: #424147;
+    font-size: 20px;
+    margin-top: 33px;
+    margin-bottom: 20px;
+}
+
+.toggles button{
+    border: none;
+    color: #424147;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.toggles button::after{
+    content: ' /';
+}
+
+.toggles button:last-child:after{
+    content: '';
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+
+@media screen and (max-width: 420px){
+    .header-container{
+        width: 100%;
+        transition: 1s;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-menu{
+        display: none;
+        transition: 1s;
+    }
+
+    .main-menu li{
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+
+    .main-menu a{
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        transition: 1s;
+        color: #000;
+    }
+
+    .toggle-button:after{
+        content: attr(data-open);
+        display: block;
+        transition: 1s;
+    }
+
+#menu-checkbox{
+    transition: 1s;
+}
+#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+ display: block;
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+    content: attr(data-close); transition: 1s;
+} 
+
+.header-container a{
+    margin-right: -65px;
+}
+
+.main-menu{
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+}
