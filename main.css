@@ -56,7 +56,7 @@ ul{
 }
 
 .top-slide{
-    background: url(/img/slider_bg.png) no-repeat;
+    background: url(img/slider_bg.png) no-repeat;
     padding-bottom: 300px;
 }
 .top-slide h2{
@@ -153,6 +153,13 @@ ul{
 
 .toggles button:last-child:after{
     content: '';
+}
+
+.posts{
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------*/ 
