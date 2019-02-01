@@ -48,6 +48,9 @@ ul{
     display: flex;
 }
 
+body{
+    background-color: #f6f6f6;
+}
 /*------------------------------------------------------------------------------------------------------------------------*/ 
 .top-container{
     width: 85%;
@@ -56,7 +59,7 @@ ul{
 }
 
 .top-slide{
-    background: url(img/slider_bg.png) no-repeat;
+    background: url(img/slider_bg.png) ;
     padding-bottom: 300px;
 }
 .top-slide h2{
@@ -145,6 +148,7 @@ ul{
     cursor: pointer;
     font-size: 16px;
     margin: 0 5px;
+    margin-bottom: 20px;
 }
 
 .toggles button::after{
@@ -161,6 +165,37 @@ ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+
+.clients{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.clients h5{
+    color: #ffea00;
+    width: 140px;
+    font-size: 20px;
+    padding: 9px 23px;
+    background-color: #424147;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.clients p{
+    color: #424147;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 33px;
+    margin-bottom: 20px;
+}
+
+
+
+
 
 /*------------------------------------------------------------------------------------------------------------------------*/ 
 
