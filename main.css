@@ -48,10 +48,14 @@ ul{
     display: flex;
 }
 
-body{
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+
+main{
     background-color: #f6f6f6;
 }
+
 /*------------------------------------------------------------------------------------------------------------------------*/ 
+
 .top-container{
     width: 85%;
     margin: 0 auto;
@@ -59,7 +63,7 @@ body{
 }
 
 .top-slide{
-    background: url(img/slider_bg.png) ;
+    background: url(img/slider_bg.png) no-repeat;
     padding-bottom: 300px;
 }
 .top-slide h2{
@@ -172,7 +176,7 @@ body{
     text-align: center;
     width: 95%;
     margin: 0 auto;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .clients h5{
@@ -193,14 +197,49 @@ body{
     margin-bottom: 20px;
 }
 
-
-
-
-
 /*------------------------------------------------------------------------------------------------------------------------*/ 
+
+footer{
+    background-color: #414146;
+    padding: 30px 0px;
+}
+
+.footer-container{
+    width: 90%;
+    color: white;
+    display: grid;
+    grid-template-columns: 35% 30% 30%;
+    margin: 0 auto;
+    grid-column-gap: 3%;
+}
+
+.footer-container .about-us a{
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    border-bottom: 2px solid #ffea00;
+    margin-top: 32px;
+    margin-bottom: 45px;
+}
+.footer-container h6{
+    font-size: 18px;
+}
+
+.about-us p{
+    font-size: 13px;
+}
+.about-us .images{
+    margin-top: 25px;
+}
+/*------------------------------------------------------------------------------------------------------------------------*/ 
+
 
 @media screen and (max-width: 420px){
     .header-container{
+        height: 210px;
         width: 100%;
         transition: 1s;
         display: flex;
@@ -255,5 +294,32 @@ body{
     position: relative;
     top: 30px;
     right: 30px;
+}
+
+.specialize-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.posts{
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+img{
+    max-width: 90%;
+}
+
+.top-slide h2{
+    display: inline;
+    background-color: #ffea00;
+    font-size: 50px;
+    max-width: 90%;
+}
+.top-slide{
+    margin-bottom: 0;
 }
 }
