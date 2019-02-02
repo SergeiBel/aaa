@@ -127,6 +127,8 @@ main{
 /*------------------------------------------------------------------------------------------------------------------------*/ 
 .portfolio{
     text-align: center;
+    max-width: 90%;
+    margin: 0 auto;  
 }
 
 .portfolio h4{
@@ -164,7 +166,7 @@ main{
 }
 
 .posts{
-    width: 90vw;
+    max-width: 90vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -231,9 +233,110 @@ footer{
 .about-us p{
     font-size: 13px;
 }
+
+.about-us .photostream{
+font-size: 18px;
+}
+
 .about-us .images{
     margin-top: 25px;
 }
+
+.tweets-container{
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tweets-container img{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.tweet{
+    display: flex;
+    flex-direction: row;
+}
+
+.social{
+    display: flex;
+}
+
+.social p{
+    font-size: 18px;
+    padding-right: 4px;
+}
+.social img{
+    display: inline-block;
+    padding-right: 1px;
+}
+
+.yellowtext{
+    color: #ffea00;
+}
+
+.adress{
+    display: flex;
+}
+
+.adress img{
+    margin-right: 10px;
+}
+
+.title{
+    padding-bottom: 15px;
+}
+
+.phone{
+    display: flex;
+}
+
+.phone img{
+    margin-right: 10px;
+}
+
+.phone a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.email{
+    display: flex;
+}
+
+.email img{
+    margin-right: 10px;
+}
+
+.email a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffea00;
+}
+
+.contact-container{
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.input{
+    border: none;
+    background-color: #414146;
+    height: 10%;
+    border-bottom: 1px solid #ffea00;
+}
+
 /*------------------------------------------------------------------------------------------------------------------------*/ 
 
 
@@ -245,7 +348,6 @@ footer{
         display: flex;
         justify-content: space-around;
     }
-
     .main-menu{
         display: none;
         transition: 1s;
@@ -301,7 +403,28 @@ footer{
     flex-direction: column;
     justify-content: space-between;
 }
+footer .about-us{
+    display: none;
+}
 
+footer .tweets{
+    display: none;
+}
+
+.footer-container{
+    display: block;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.phone{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .posts{
     max-width: 90%;
     margin: 0 auto;
